@@ -2,6 +2,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_offline.h"
+#include <qtimer.h>
 
 class Offline : public QMainWindow
 {
@@ -10,6 +11,12 @@ class Offline : public QMainWindow
 public:
 	Offline(QWidget *parent = Q_NULLPTR);
 
+	private slots:
+		void on_startButton_clicked();
+		void startTimer();
+
 private:
-	Ui::OfflineClass ui;
+	Ui::OfflineClass *ui;
+	QTimer *timer;
+	int time;
 };

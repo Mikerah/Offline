@@ -18,10 +18,9 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QTimeEdit>
 #include <QtWidgets/QToolBar>
-#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -31,10 +30,8 @@ class Ui_OfflineClass
 public:
     QWidget *centralWidget;
     QLCDNumber *timerDisplay;
-    QTimeEdit *setTimeField;
     QPushButton *startButton;
-    QWidget *verticalLayoutWidget;
-    QVBoxLayout *verticalLayout;
+    QSpinBox *timerSpinBox;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -49,20 +46,12 @@ public:
         timerDisplay = new QLCDNumber(centralWidget);
         timerDisplay->setObjectName(QStringLiteral("timerDisplay"));
         timerDisplay->setGeometry(QRect(180, 70, 241, 101));
-        setTimeField = new QTimeEdit(centralWidget);
-        setTimeField->setObjectName(QStringLiteral("setTimeField"));
-        setTimeField->setGeometry(QRect(210, 200, 171, 31));
         startButton = new QPushButton(centralWidget);
         startButton->setObjectName(QStringLiteral("startButton"));
         startButton->setGeometry(QRect(260, 270, 91, 51));
-        verticalLayoutWidget = new QWidget(centralWidget);
-        verticalLayoutWidget->setObjectName(QStringLiteral("verticalLayoutWidget"));
-        verticalLayoutWidget->setGeometry(QRect(120, 10, 381, 331));
-        verticalLayout = new QVBoxLayout(verticalLayoutWidget);
-        verticalLayout->setSpacing(6);
-        verticalLayout->setContentsMargins(11, 11, 11, 11);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        timerSpinBox = new QSpinBox(centralWidget);
+        timerSpinBox->setObjectName(QStringLiteral("timerSpinBox"));
+        timerSpinBox->setGeometry(QRect(250, 190, 111, 51));
         OfflineClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(OfflineClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -76,6 +65,7 @@ public:
         OfflineClass->setStatusBar(statusBar);
 
         retranslateUi(OfflineClass);
+        QObject::connect(startButton, SIGNAL(clicked()), timerDisplay, SLOT(show()));
 
         QMetaObject::connectSlotsByName(OfflineClass);
     } // setupUi

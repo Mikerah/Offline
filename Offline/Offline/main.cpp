@@ -1,5 +1,6 @@
 #include "offline.h"
 #include <QtWidgets/QApplication>
+#include <QTimer>
 
 int main(int argc, char *argv[])
 {
