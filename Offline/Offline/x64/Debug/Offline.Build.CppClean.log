@@ -1,10 +1,14 @@
 c:\users\mikerah\documents\github\offline\offline\offline\x64\debug\vc141.pdb
-c:\users\mikerah\documents\github\offline\offline\offline\x64\debug\qrc_offline.obj
+c:\users\mikerah\documents\github\offline\offline\offline\x64\debug\utils.obj
 c:\users\mikerah\documents\github\offline\offline\offline\x64\debug\offline.obj
 c:\users\mikerah\documents\github\offline\offline\offline\x64\debug\main.obj
 c:\users\mikerah\documents\github\offline\offline\offline\x64\debug\moc_offline.obj
-c:\users\mikerah\documents\github\offline\offline\offline\generatedfiles\qrc_offline.cpp
+c:\users\mikerah\documents\github\offline\offline\offline\x64\debug\moc_disablenetworkadaptersthread.obj
+c:\users\mikerah\documents\github\offline\offline\offline\x64\debug\disablenetworkadaptersthread.obj
+c:\users\mikerah\documents\github\offline\offline\offline\x64\debug\qrc_offline.obj
 c:\users\mikerah\documents\github\offline\offline\offline\generatedfiles\ui_offline.h
+c:\users\mikerah\documents\github\offline\offline\offline\generatedfiles\debug\moc_disablenetworkadaptersthread.cpp
+c:\users\mikerah\documents\github\offline\offline\offline\generatedfiles\qrc_offline.cpp
 c:\users\mikerah\documents\github\offline\offline\offline\generatedfiles\debug\moc_offline.cpp
 c:\users\mikerah\documents\github\offline\offline\x64\debug\offline.ilk
 c:\users\mikerah\documents\github\offline\offline\x64\debug\offline.exe

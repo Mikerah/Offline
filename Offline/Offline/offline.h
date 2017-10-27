@@ -16,7 +16,7 @@ public:
 		void startTimer();
 
 private:
-	Ui::OfflineClass *ui;
+	Ui::OfflineClass ui;
 	QTimer *timer;
 	int time;
 };
